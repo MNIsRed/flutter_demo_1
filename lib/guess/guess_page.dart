@@ -47,7 +47,8 @@ class _GuessPage extends State<GuessPage> {
     });
   }
 
-  @override void dispose() {
+  @override
+  void dispose() {
     // 控制器要注意销毁
     inputWatcher.dispose();
     super.dispose();
@@ -66,9 +67,14 @@ class _GuessPage extends State<GuessPage> {
             Column(
               children: [
                 // if保证一个控件，正好通过中间的Spacer，达成大在上，小在下的UI
-                if (_isBigger!) const ResultNotice(info: "大",color: Colors.blue,),
+                if (_isBigger!)
+                  //ResultNotice设置为const后将无法触发didUpdateWidget，导致动画不刷新
+                  ResultNotice(
+                    info: "大",
+                    color: Colors.blue,
+                  ),
                 const Spacer(),
-                if (!_isBigger!) const ResultNotice(info: "小",color: Colors.red),
+                if (!_isBigger!) ResultNotice(info: "小", color: Colors.red),
               ],
             ),
           Center(
