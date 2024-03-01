@@ -1,16 +1,4 @@
 # flutter_demo_1
 
-A new Flutter project.
+[Flutter 入门教程](https://juejin.cn/book/7212822723330834487)跟练，参考[flutter_first_station](https://github.com/toly1994328/flutter_first_station)。
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
